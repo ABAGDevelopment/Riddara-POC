@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+  }
+  
+.coming-soon {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 45px;
+    z-index: 1; /* Ensure content is above the background */
+}
+.content-inside-riddara-background {
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background for readability */
+    border-radius: 10px;
+   
+    z-index: 1; /* Ensure content is above the background */
+}
+
+.coming-soon-text{
+    font-size: larger;
+    color: white;
+
+}
+.copyrights{
+    font-size: larger;
+    color: white;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainImage{
+    position: absolute;
+    top: 0; /* Start from the top of the page */
+    z-index: 1; /* Lower z-index than the navbar */
+   
+}
+
+
+
+
+.arrow-right {
+    
+    width: auto;
+    height: auto;
+    background: url(../public/right-arrow.png) no-repeat 50%;
+    background-size: contain;
+}
+
+/**
+
+Padding bottom is calculated based on (image height/image width)*100
+*/
+
+/* Ensure overall layout has no extra margins or padding */
+
+  
+  /* Main container positioning */
+  .innerDiv {
+    position: absolute;
+    top: 5%; /* Adjust as needed for overall positioning */
+    left: 50%;
+    transform: translate(-50%, 0); /* Maintain horizontal center */
+    width: auto;
+    height: auto; /* Set height to auto to avoid unnecessary height constraints */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  /* Logo wrapper */
+  .logoWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10px; /* Space between logo and title */
+  }
+  
+  /* Image inside logo */
+  .imageInsideLogo {
+    width: 50%;
+    padding-bottom: 9.5%;
+    display: block; /* Remove extra space below the image */
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  /* Title styling */
+  .floor-1-title {
+    font-family: Montserrat semiBold, PingFang SC Semibold;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 2rem); /* Responsive font size */
+    margin-top: 10px; /* Space between logo and title */
+    max-width: 90%; /* Limit width to avoid overflow */
+   
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  }
+  
+/* Button wrapper styling */
+.buttonWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+/* Button styling */
+.button {
+    position: relative;
+    min-width: 200px; /* Set a minimum width */
+    padding: 10px 20px; /* Adjust padding for more space */
+    background-image: url(../public/button.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-text:hover{
+    color: rgba(223, 169, 22, 0.4);
+}
+
+.arrow-icon:hover{
+    background-color: rgba(223, 169, 22, 0.4);
+}
+
+/* Adjust the button text */
+.button-text {
+    color: #fff;
+    font-size: clamp(0.75rem, 2vw, 1.5rem); /* Responsive font size */
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1; /* Allow text to grow within the available space */
+    padding-right: 10px; /* Space between text and arrow */
+    padding-left: 10px; /* Add padding to the left for consistency */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+}
+
+/* Adjust the arrow icon position */
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(../public/right-arrow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* Change to relative positioning */
+    margin-left: 10px; /* Add margin to space the arrow from the text */
+    display: flex;
+    align-items: center; /* Vertically center the arrow */
+}
+
+
+.floor-3-content{
+    position: absolute;
+    top: 4.85333rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+}
+
+.floor-3-title{
+    font-family: Montserrat semiBold, PingFang SC Semibold;
+    font-size: .53333rem;
+    line-height: .66667rem;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
+    margin-bottom: .42667rem;
+}
+.floor-3-subtitle{
+    font-size: .37333rem;
+    line-height: .45333rem;
+    color: #fff;
+    text-align: center;
+    padding: 0 .66667rem;
+}
+.floor-3-btn{
+    font-family: Montserrat semiBold, PingFang SC Semibold;
+    font-size: .42667rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.56rem;
+    height: 1.06667rem;
+    background: url(../public/right-arrow.png) no-repeat 50%;
+    background-size: contain;
+    line-height: 1;
+    margin: .64rem auto;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
+    gap: 20px; /* Adjust the gap between columns */
+  }
+  
+  .column {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  
+  
+.navbarBorder::after{
+    content: ''; /* Create the pseudo-element */
+    position: absolute;
+    bottom: 0; /* Position at the bottom of the div */
+    left: 1%; /* Start the border 10% from the left edge */
+    right: 1%; /* End the border 10% from the right edge */
+    height: 0; /* No height, as we only want a border */
+    border-bottom: 2px solid white; /* Create the bottom border */
+}
+
+
+.formcontainer{
+    width:100%;
+    height: 100%;
+}
+.page-clue_form-title{
+    font-family: Montserrat semiBold, PingFang SC Semibold;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    line-height: 4rem;
+    text-align: left;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+
+.page-clue_form-subtitle{
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
+    line-height: 1rem;
+    text-align: left;
+    font-weight: 400;
+    color: #757779;
+}
+
+
+.move-down {
+    position: relative; /* Ensure the element is positioned relative to its normal position */
+    transform: translateY(40%); /* Moves the element down by 20% of its own height */
+}
+
+.center-horizontal {
+    display: flex;
+    justify-content: center;
+  }
+
+.page-clue_form-subtitle-detail{
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
+    line-height: 2rem;
+    text-align: left;
+    font-weight: 400;
+    color: #757779;
+    margin-top: 2rem;
+   
+}
+.marker{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: #757779;
+    border-radius: 50%;
+    margin-right: .13333rem;
+}
+
+.form-one-column-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Defines a single column */
+    gap: 10px; /* Adjusts the space between rows */
+    width: 100%; /* Ensures the grid takes up the full width */
+}
+
+.form-grid-item {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+
+
+.el-form{
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+
+.temp-full-width-container {
+    width: 100%;
+    background-color:rgba(64,76,60);
+   
+}
+
+/* Content inside the container */
+.temp-content img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    
+}
+
+.temp-content{
+    background-color:rgba(64,76,60);
+}
+
+.wrapperEmail{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 9999; /* High z-index to ensure it is on top */
+                background-color: rgba(255, 255, 255, 0.1); /* Optional styling */
+                padding: 10px; /* Optional styling */
+               
+                color: #fff;
+}
+
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh; /* Adjust height as needed */
+}
+
+.footer-content {
+    flex: 1; /* Takes up all available space */
+    display: flex; /* Make the content a flex container */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    padding: 20px;
+    background-color: rgba(64, 76, 60);
+    color: #fff;
+}
+
+.footer-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 20px; /* Adjust the gap between columns */
+    width: 100%;
+}
+
+.footer-column {
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.footer-column:first-child {
+    justify-content: flex-start; /* Align first column content to the left */
+}
+
+.footer-column:last-child {
+    justify-content: flex-end; /* Align second column content to the right */
+}
+.tempsectioncta{
+    background-color:rgba(64,76,60);
+}
+
+
+
+.moveContainersdown{
+    padding-top: 5rem;
+}
+
+
+/* Sticky footer */
+.footer-copyrights {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.backgroundCheck{
+    border: 5px solid red;
+}
+
+.backgroundCheckGreen{
+    border: 5px solid green;
+}
+
+.backgroundCheckYellow{
+    border: 1px solid yellow;
+}
+
+.backgroundCheckMainContainer{
+    border: 5px solid orange;
+}
+
+.bg-fit{
+    object-fit:cover;
+    z-index:-5;
+}
+
+.bg-background{
+    background-color: #7191bd;
+}
+
+.bg-background\/70{
+    background-color: rgba(0, 0, 0, 0.05); /* Semi-transparent background for readability */
+}
+
+.content-inside-riddara-background {
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background for readability */
+    border-radius: 10px;
+    z-index: 1; /* Ensure content is above the background */
+}
+
+.coming-soon-text{
+    font-size: larger;
+    color: white;
+
+}
+.backdrop-blur-lg {
+    backdrop-filter: none; /* Removes all backdrop effects */
+}
+
+/* Mobile devices (portrait) */
+@media (max-width: 480px) {
+    
+    .background-container-riddara {
+       
+        background-color: #7191bd; /* Fallback color for any blank space */
+        background: url('/riddara-mobile.jpeg');
+      
+        }
+    
+    
+    
+  }
+  
+  /* Mobile devices (landscape) and small tablets */
+  @media (min-width: 481px) and (max-width: 767px) {
+    .background-container-riddara {
+       
+        background-color: #7191bd; /* Fallback color for any blank space */
+        background: url('/riddara-small-tablet.jpeg') ;
+         /* Background image */
+        
+        }
+        
+        
+      
+      
+  }
+  
+  /* Tablets (portrait) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .background-container-riddara {
+       
+        background-color: #7191bd; /* Fallback color for any blank space */
+        background: url('/riddara-tablet-portrait.jpeg');
+         /* Background image */
+       
+        }
+        
+        
+   
+   
+  }
+  
+  /* Tablets (landscape) and small desktops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+
+    .background-container-riddara {
+     
+        background-color: #7191bd; /* Fallback color for any blank space */
+        background: url('/riddara-tablet-landscape.jpeg') ;
+         /* Background image */
+       
+        }
+        
+        
+    
+   
+  }
+  
+  /* Desktops (small to medium) */
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    .background-container-riddara {
+      
+        background-color: #7191bd; /* Fallback color for any blank space */
+        background: url('/riddara-small-desktop.jpeg');
+         /* Background image */
+      
+        }
+        
+        
+    
+    
+
+  }
+  
+  /* Large desktops and high-resolution screens */
+  @media (min-width: 1400px) {
+    .background-container-riddara {
+                    
+                        background-color: #7191bd; /* Fallback color for any blank space */
+                        background-image: url('/riddara-mobile.jpeg'); /* Background image */
+                      
+    }
+   
+  }
+
+
+
