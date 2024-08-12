@@ -1,20 +1,11 @@
 "use client";
-
-
 import RiddaraPage from "./RiddaraPage";
 import ResponsiveImage from "./ResponsiveImage";
 import Riddara from "../public/riddara-white.png";
 import Image from "next/image";
 import {Input} from "@nextui-org/react";
 import {Button} from "@nextui-org/react";
-
-import {
- 
-
-  Logo,
- 
-} from "@/components/icons";
-
+import {Logo} from "@/components/icons";
 export default function Home() {
   return (
 

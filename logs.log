@@ -1,0 +1,28 @@
+
+> next-app-template@0.0.1 dev
+> next dev --turbo
+
+  ▲ Next.js 14.2.4 (turbo)
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 6.9s
+ ○ Compiling / ...
+ ✓ Compiled / in 21.3s
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1267ms
+ GET / 500 in 23363ms
+ GET / 500 in 548ms
+Terminate batch job (Y/N)? 
+[?25h
+
+> next-app-template@0.0.1 dev
+> next dev --turbo
+
+   ▲ Next.js 14.1.0 (turbo)
+   - Local:        http://localhost:3000
+
+ ✓ Ready in 6.4s
+ ○ Compiling / ...
+Terminate batch job (Y/N)? [?25h
+

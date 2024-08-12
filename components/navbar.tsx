@@ -6,27 +6,13 @@ import {
   NavbarItem,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
-
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
-
 import NextLink from "next/link";
-
-{/* Customized Template for Riddara Purposes only :)  */}
-
 import { siteConfig } from "@/config/site";
-
-import {
- 
-
-  Logo,
- 
-} from "@/components/icons";
-
+import {Logo} from "@/components/icons";
 export const Navbar = () => {
-
-
   return (
     <NextUINavbar maxWidth={'full'} position="sticky" className="navbarBorder">
       <NavbarContent  justify="start">

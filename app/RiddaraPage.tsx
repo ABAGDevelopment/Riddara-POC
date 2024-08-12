@@ -1,10 +1,6 @@
 export default function RiddaraPage(){
-
-
-    return (
+  return (
    <div className="backgroundCheck">
-
-
    </div>
    
     )
