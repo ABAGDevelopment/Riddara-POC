@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import Image, { ImageProps } from 'next/image';
+import { useEffect, useState } from "react";
+import Image, { ImageProps } from "next/image";
 
 interface ResponsiveImageProps extends Omit<ImageProps, 'src'> {
   srcMobile: string;  
